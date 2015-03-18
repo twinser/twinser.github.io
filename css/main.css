@@ -1,8 +1,7 @@
 body {
-	text-align: center;
-    background-image: url("/img/lego.jpg");
+    	background-image: url("/img/lego.jpg");
 	background-position: center;
 	background-size: cover;
 	font-family: helvetica;
-       color: white;
+       	color: white;
 }
