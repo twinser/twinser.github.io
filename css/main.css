@@ -1,7 +1,10 @@
+@font-face {
+    font-family: Barrio;
+    src: url(Barrio-Regular.otf);
+}
+
 body {
-    	background-image: url("/img/lego.jpg");
-	background-position: center;
-	background-size: cover;
-	font-family: helvetica;
-       	color: white;
+	background-color: FFBB44;
+	font-family: Barrio;
+    color: white;
 }
