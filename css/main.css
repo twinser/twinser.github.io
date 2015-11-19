@@ -21,10 +21,15 @@ h3{
 	color: #000000;
 }
 
+.centred, #mobile {
+	text-align: center
+}
+
 main{
   font-size: 15px;
   text-align: left;
   padding-left: 30px;
+  padding-right: 30px;
 }
 
 img {
@@ -47,4 +52,12 @@ td, th {
 
 th {
 	font-size: 18px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 400px) {
+  #mobile { display: block; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 401px) and (max-width: 1024px) {
+  #mobile { display: none; }   /* hide it elsewhere */
 }
