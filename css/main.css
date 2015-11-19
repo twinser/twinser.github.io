@@ -1,55 +1,50 @@
-@font-face {
-    font-family: Barrio;
-    src: url(Barrio-Regular.otf);
-}
-
 body {
 	background-color: #F3F3F3;
 	font-family: Helvetica;
     color: #000000;
-	text-align: center;
 	margin: 0;
-	padding-top: 250px;
 }
 
 h1{
 	font-size: 40px;
+	text-align: center;
 }
 
 h2{
 	font-size: 25px;
 	color: #000000;
+	text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+h3{
+	font-size: 20px;
+	color: #000000;
 }
 
-header {
-  height: 300px;
-  padding-top: 50px;
-  background: #F3F3F3;
+main{
+  font-size: 15px;
+  text-align: left;
+  padding-left: 30px;
 }
-.main-nav,
-.main {
-  position: relative; 
+
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.main-nav {
-  background: #f3f3f3;
-  height: 80px;
-  z-index: 150;
-  margin-bottom: -80px;
-  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+
+table {
+    border-collapse: collapse;
 }
-header,
-.main-nav-scrolled {
-  position: fixed;
-  width: 100%;
-  top: 0;
+
+table, th, td {
+	border: 1px solid #000000;
 }
-.main {
-  background: #f3f3f3;
-  padding: 110px 50px 50px;
-  column-count: 2;
-  column-gap: 40px;
-}	
+
+td, th {
+    padding: 5px;
+}
+
+th {
+	font-size: 18px;
+}
