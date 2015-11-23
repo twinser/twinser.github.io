@@ -4,12 +4,19 @@
 <meta content='width=device-width, initial-scale=1' name='viewport'/>
 <link href="css/main.css" rel="stylesheet">
 <script src="js/snowstorm-min.js"></script>
+<script>snowStorm.excludeMobile = false;</script>
 </head>
 <body>
 <h1>Tom & Hannah's flat</h1>
 <h2>Where to park</h2>
 <div id="mobile">
 	<h4>On a mobile phone? Turn it on its side to see the map slightly bigger.</h4>
+</div>
+<div class="snowStop" id="snowStop">
+	<h4>Running slow? <a href="#" onclick="snowStorm.toggleSnow();showElm('snowStart');hideElm('snowStop');">Stop the snow</a></h4>
+</div>
+<div class="snowStart hidden" id="snowStart">
+	<h4>Where's the snow? <a href="#" onclick="snowStorm.toggleSnow();showElm('snowStop');hideElm('snowStart');">Start the snow</a></h4>
 </div>
 <div class="centred">
 	<h4>Click the map to view it in Google Maps.</h4>
@@ -29,7 +36,17 @@
 	</table>
 	</p>
 </main>
+<script>
+function hideElm(element){
+	document.getElementById(element).className += " hidden";
+	document.getElementById(element).className = document.getElementById(element).className.replace( /(?:^|\s)shown(?!\S)/g , '' );
+}	
 
+function showElm(element){
+	document.getElementById(element).className += " shown";
+	document.getElementById(element).className = document.getElementById(element).className.replace( /(?:^|\s)hidden(?!\S)/g , '' );
+}
+</script>
 </body>
 </html>
 

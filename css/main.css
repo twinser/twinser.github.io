@@ -36,10 +36,14 @@ h3 {
  	color:#99ccff;
 }
 
-h4 {
+h4, a {
 	font-size:1.1em;
  	font-weight: 100;
 	text-align: center;
+}
+
+a:link, a:visited {
+	color: #fff;
 }
 
 .centred, #mobile {
@@ -77,6 +81,14 @@ th {
 	font-size: 1.1em;
 	font-weight: 200;
 	color: #99ccff;
+}
+
+.hidden {
+	display: none;
+}
+
+.shown {
+	display: block;
 }
 
 @media screen and (min-width: 0px) and (max-width: 400px) {
